@@ -1,3 +1,10 @@
+/*
+ * @Project Name : Naga Bonar
+ * @Project Start : 10 December 2016
+ * @Email : muhibbudinsuretno1@gmail.com
+ * @License : GPL-3.0
+ * @Author : Muhibbudin Suretno
+ */
 Language = {
 	id: {
 		player_name: 'Belum Ada',

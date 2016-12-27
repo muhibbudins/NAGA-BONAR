@@ -1,0 +1,155 @@
+/* Color Variable */
+@black       : #5B5B5B;
+@white       : #FFFFFF;
+@green       : #A8C335;
+@darkgreen   : #9AAE4B;
+@blue        : #789EDA;
+@lightblue   : #D8E3F4;
+@darkblue    : #3771C8;
+@grey        : #BCBCBC;
+@darkgrey    : #ABABAB;
+@orange      : #FF944D;
+@darkorange  : #FF893B;
+
+/* Function Variable */
+.border-radius(@round) {
+	-webkit-border-radius: @round;
+	-moz-border-radius: @round;
+	-ms-border-radius: @round;
+	-o-border-radius: @round;
+	border-radius: @round;
+}
+.background-image(@url) {
+	background-image: url(@url);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+/* Global Variable */
+body {
+	color: @black;
+	font-size: 16px;
+	background-color: @lightblue;
+	padding: 75px 0;
+}
+
+.animated.fast {
+    -webkit-animation-duration: 0.3s;
+    animation-duration: 0.3s;
+}
+
+.container {
+	width: 960px;
+	margin: 0 auto;
+	text-align: center;
+	.header {
+		padding: 30px;
+		.logo {
+			margin: 0 auto;
+			width: 50%;
+			position: relative;
+			span {
+				position: absolute;
+				right: 60px;
+				bottom: 20px;
+				font-size: 40px;
+				font-weight: bold;
+				color: @orange;
+			}
+		}
+	}
+	.preview {
+		.board {
+			img {
+				width: 100%;
+				height: auto;
+			}
+		}
+		.character {
+			.grid {
+				display: flex;
+				.item {
+					width: 24%;
+					display: block;
+					margin: 1%;
+					img {
+						width: 100%;
+					}
+				}
+			}
+		}
+	}
+	.footer {
+
+	}
+	.button {
+		text-align: center;
+		text-decoration: none;
+		color: @white;
+		background-color: @grey;
+		margin: 20px auto;
+		margin-bottom: 10px;
+		border-bottom: 4px solid @darkgrey;
+		cursor: pointer;
+		padding: 15px 20px;
+		font-size: 16px;
+		line-height: normal;
+
+		.border-radius(10px);
+
+		&:hover {
+			background-color: darken(@grey, 5%);
+			border-color: darken(@darkgrey, 9%);
+		}
+		&:active {
+			background-color: darken(@grey, 9%);
+			border-color: darken(@darkgrey, 12%);
+		}
+
+		&.orange {
+			background-color: @orange;
+			border-bottom: 5px solid @darkorange;
+
+			&:hover {
+				background-color: darken(@orange, 5%);
+				border-color: darken(@darkorange, 9%);
+			}
+			&:active {
+				background-color: darken(@orange, 9%);
+				border-color: darken(@darkorange, 12%);
+			}
+		}
+		&.blue {
+			background-color: @blue;
+			border-bottom: 5px solid @darkblue;
+
+			&:hover {
+				background-color: darken(@blue, 5%);
+				border-color: darken(@darkblue, 9%);
+			}
+			&:active {
+				background-color: darken(@blue, 9%);
+				border-color: darken(@darkblue, 12%);
+			}
+		}
+		&.green {
+			background-color: @green;
+			border-bottom: 5px solid @darkgreen;
+			
+			&:hover {
+				background-color: darken(@green, 5%);
+				border-color: darken(@darkgreen, 9%);
+			}
+			&:active {
+				background-color: darken(@green, 9%);
+				border-color: darken(@darkgreen, 12%);
+			}
+		}
+
+		&.disabled, &.disabled:hover, &.disabled:active  {
+			cursor: not-allowed;
+			background-color: @grey;
+			border-bottom: 5px solid @darkgrey;
+		}
+	}
+}

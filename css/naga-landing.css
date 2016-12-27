@@ -1,0 +1,119 @@
+/* Color Variable */
+/* Function Variable */
+/* Global Variable */
+body {
+  color: #5B5B5B;
+  font-size: 16px;
+  background-color: #D8E3F4;
+  padding: 75px 0;
+}
+.animated.fast {
+  -webkit-animation-duration: 0.3s;
+  animation-duration: 0.3s;
+}
+.container {
+  width: 960px;
+  margin: 0 auto;
+  text-align: center;
+}
+.container .header {
+  padding: 30px;
+}
+.container .header .logo {
+  margin: 0 auto;
+  width: 50%;
+  position: relative;
+}
+.container .header .logo span {
+  position: absolute;
+  right: 60px;
+  bottom: 20px;
+  font-size: 40px;
+  font-weight: bold;
+  color: #FF944D;
+}
+.container .preview .board img {
+  width: 100%;
+  height: auto;
+}
+.container .preview .character .grid {
+  display: flex;
+}
+.container .preview .character .grid .item {
+  width: 24%;
+  display: block;
+  margin: 1%;
+}
+.container .preview .character .grid .item img {
+  width: 100%;
+}
+.container .button {
+  text-align: center;
+  text-decoration: none;
+  color: #FFFFFF;
+  background-color: #BCBCBC;
+  margin: 20px auto;
+  margin-bottom: 10px;
+  border-bottom: 4px solid #ABABAB;
+  cursor: pointer;
+  padding: 15px 20px;
+  font-size: 16px;
+  line-height: normal;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  border-radius: 10px;
+}
+.container .button:hover {
+  background-color: #afafaf;
+  border-color: #949494;
+}
+.container .button:active {
+  background-color: #a5a5a5;
+  border-color: #8c8c8c;
+}
+.container .button.orange {
+  background-color: #FF944D;
+  border-bottom: 5px solid #FF893B;
+}
+.container .button.orange:hover {
+  background-color: #ff8533;
+  border-color: #ff6d0d;
+}
+.container .button.orange:active {
+  background-color: #ff781f;
+  border-color: #fd6500;
+}
+.container .button.blue {
+  background-color: #789EDA;
+  border-bottom: 5px solid #3771C8;
+}
+.container .button.blue:hover {
+  background-color: #6490d5;
+  border-color: #2d5da4;
+}
+.container .button.blue:active {
+  background-color: #5484d0;
+  border-color: #2a5698;
+}
+.container .button.green {
+  background-color: #A8C335;
+  border-bottom: 5px solid #9AAE4B;
+}
+.container .button.green:hover {
+  background-color: #97af30;
+  border-color: #7e8e3d;
+}
+.container .button.green:active {
+  background-color: #899f2b;
+  border-color: #748339;
+}
+.container .button.disabled,
+.container .button.disabled:hover,
+.container .button.disabled:active {
+  cursor: not-allowed;
+  background-color: #BCBCBC;
+  border-bottom: 5px solid #ABABAB;
+}
+/*# sourceMappingURL=naga-landing.css.map */

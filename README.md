@@ -6,18 +6,18 @@ The NAGA BONAR Project is an open source game project with license GPL-3.0, buil
 
 ![Naga Bonar Board](https://github.com/muhibbudins/NAGA-BONAR/blob/master/img/preview.png "Naga Bonar Board")
 
+[DEMO HERE](http://muhibbudins.github.io/NAGA-BONAR/naga-bonar.html)
+
 ## Docs
 
 [Important!] Naga Bonar Class using jQuery for core library like animate, dom and anything
 
 Rule Of Game (Its the rule of the game, everything algoritmas of this game defining from this rule)
 1. Every pion move if start button or space key on clicked
-2. Every pion move to blok with formula current location + getting random number (ex. current location is 1
-   and then this pion get dice 4 so this pion move to blok 5)
+2. Every pion move to blok with formula current location + getting random number (ex. current location is 1 and then this pion get dice 4 so this pion move to blok 5)
 3. If pion walk above stairs so this pion will move up to end of stairs [Up]
 4. If pion walk above dragon head so this pion will move down to end of tail dragon [Drop]
-5. If pion get dice and > last blok so move pion to last blok and then move to blok "Last blok - rest of move"
-   (ex. My pion on blok 96 and i get dice 6 so my pion move to blok 100 and move again to blok 98 ) [Retreat]
+5. If pion get dice and > last blok so move pion to last blok and then move to blok "Last blok - rest of move" (ex. My pion on blok 96 and i get dice 6 so my pion move to blok 100 and move again to blok 98 ) [Retreat]
 6. Player poin +10 if player moving, if player up so poin +20 and player drop so poin -5
 7. Player move is summary for all getting dice
 

@@ -13,6 +13,7 @@ The NAGA BONAR Project is an open source game project with license GPL-3.0, buil
 [Important!] Naga Bonar Class using jQuery for core library like animate, dom and anything
 
 Rule Of Game (Its the rule of the game, everything algoritmas of this game defining from this rule)
+
 1. Every pion move if start button or space key on clicked
 2. Every pion move to blok with formula current location + getting random number (ex. current location is 1 and then this pion get dice 4 so this pion move to blok 5)
 3. If pion walk above stairs so this pion will move up to end of stairs [Up]

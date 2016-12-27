@@ -4,62 +4,105 @@
 <head>
     <meta charset="UTF-8">
     <title>Naga Bonar [Beta]</title>
+
+    <meta property="og:title" content="Game Open Source | Naga Bonar"/>
+    <meta property="og:image" content="https://muhibbudins.github.io/NAGA-BONAR/img/preview.png"/>
+    <meta property="og:site_name" content="Muhibbudin Suretno"/>
+    <meta property="og:description" content="The NAGA BONAR Project is an open source game project with license GPL-3.0, build with HTML, CSS JS (include jQuery library) and some image assets. Everyone can contribution to this project with fork and pull request from my github. For any information, feedback, donation and hiring you can ask me at muhibbudinsuretno1@gmail.com."/>
+
     <link rel="stylesheet" href="css/common.css">
-    <link rel="stylesheet" href="css/naga-landing.css">
+    <link rel="stylesheet" href="css/naga-bonar.css">
 </head>
 
 <body>
-    <div class="container">
-    	<div class="header">
-    		<div class="logo">
-				<img src="img/Logo.png" alt="">
-				<span>BETA 1</span>
-    		</div>
-    		<p>The NAGA BONAR Project is an open source game project with license GPL-3.0, build with HTML, CSS JS (include jQuery library) and some image assets. Everyone can contribution to this project with fork and pull request from my github. For any information, feedback, donation and hiring you can ask me at <a href="">muhibbudinsuretno1@gmail.com</a>.</p>
-    		<p>Thanks for come to this project ;)</p>
-    	</div>
-    	<div class="preview">
-    		<div class="board">
-    			<h1>Game Board</h1>
-    			<p>For your information if you want to change board theme, you can re-design with Inkscape. Because i'm make everything image asset for this project with Inkscape.</p>
-				<img src="img/preview.png" alt="">
-    		</div>
-    		<div class="character">
-    			<h1>Game Character</h1>
-    			<p>For this section i will explain about character in this game, i'm just make 4 pion for game so if you want to custom character you must add manualy at "allPion" variable in "naga-bonar.js" and you must too make character avatar again.</p>
-    			<div class="grid">
-					<div class="item">
-						<img src="img/avatar-1.png" alt="">
-						<h2>Ali</h2>
-					</div>
-					<div class="item">
-						<img src="img/avatar-2.png" alt="">
-						<h2>Nilam</h2>
-					</div>
-					<div class="item">
-						<img src="img/avatar-3.png" alt="">
-						<h2>William</h2>
-					</div>
-					<div class="item">
-						<img src="img/avatar-4.png" alt="">
-						<h2>Richard</h2>
-					</div>
-				</div>
-    		</div>
-    	</div>
-    	<div class="footer">
-    		<h2>Contribution and Feedback</h2>
-    		<p>If you have any question for contribution, feedback, hiring and anything just contact me at my social media account.</p>
-    		<a href="" class="button orange"><i class="fa fa-google-plus"></i> Google Plus</a>
-    		<a href="" class="button blue"><i class="fa fa-facebook"></i> Facebook</a>
-    		<a href="" class="button"><i class="fa fa-github"></i> Github</a>
-    		<a href="" class="button blue"><i class="fa fa-linkedin"></i> Linked In</a>
-    	</div>
+    <div class="nb-container">
+        <div class="nb-left">
+            <div class="nb-board animated fadeIn"></div>
+        </div>
+        <div class="nb-right">
+            <div class="nb-player animated fadeInUp">
+                <div class="player-name"></div>
+                <div class="player-extra">
+                    <div class="player-avatar"><img src="img/avatar-1.png"></div>
+                    <div class="player-poin">0</div>
+                </div>
+                <div class="player-move"></div>
+            </div>
+            <div class="nb-dice animated fadeInUp">
+                <img src="img/dice-start.png">
+            </div>
+            <div class="nb-start green animated fadeInUp"></div>
+            <div class="nb-extra">
+                <a class="nb-button animated fadeInUp orange nb-restart"><i class="fa fa-refresh"></i></a>
+                <a href="https://www.facebook.com/sharer/sharer.php?u=https://muhibbudins.github.io/NAGA-BONAR/game.html" class="nb-button animated fadeInUp blue nb-share" target="_blank"><i class="fa fa-facebook"></i></a>
+                <a href="https://github.com/muhibbudins/NAGA-BONAR" class="nb-button animated fadeInUp nb-question" target="_blank"><i class="fa fa-github"></i></a>
+            </div>
+        </div>
+        <div class="nb-clear"></div>
     </div>
+
+    <div class="nb-warning">
+        <div class="nb-content">
+            <div class="nb-title"></div>
+            <br><br>
+            <div class="nb-small"></div>
+        </div>
+    </div>
+
+    <div class="nb-flexbox">
+        <div class="nb-message-box animated fast">
+            <div class="title"></div>
+            <a class="button blue message-approve"></a>
+            <a class="button message-deny"></a>
+        </div>
+    </div>
+
+    <div class="nb-finish-box animated fast">
+        <div class="nb-content">
+            <div class="title">
+                <span class="congrat"></span>
+                <span class="name"></span>
+            </div>
+            <div class="sub-title">
+                <span class="first"></span>
+                <span class="score"><b>2000</b></span>
+                <span class="center"></span>
+                <span class="move"><b>40</b></span>
+                <span class="last"></span>
+            </div>
+            <div class="sub-title share"></div>
+            <br>
+            <a class="button orange fn-restart"></a>
+            <a href="https://www.facebook.com/sharer/sharer.php?u=https://muhibbudins.github.io/NAGA-BONAR/game.html" class="button blue fn-share" target="_blank"></a>
+            <a href="https://github.com/muhibbudins/NAGA-BONAR" class="button fn-github" target="_blank"></a>
+        </div>
+    </div>
+    
     <script type="text/javascript" src="js/jquery.min.js"></script>
     <script type="text/javascript" src="js/lang.js"></script>
+    <script type="text/javascript" src="js/naga-bonar.js"></script>
     <script type="text/javascript">
+        if (typeof $ === 'undefined' && typeof jQuery === 'undefined') {
+            console.log('%cFatal Error!', 'color: #F74316; font-weight: bold')
+            console.log('%cThis game require jQuery for core event like DOM, moving and animation. Please reload this page if you already include a library.', 'color: #6285E5')
+            document.getElementsByClassName('nb-warning')[0].style.visibility = 'visible'
+        } else {
+            $(document).ready(function() {
+                NagaBonar.initGrid('.nb-board', function(msg) {
+                    $('.nb-start').click(function(e) {
+                        NagaBonar.doStart(this)
+                    })
 
+                    $('.nb-restart').click(function() {
+                        NagaBonar.doRestart()
+                    })
+                    
+                    $(document).keydown(function(e) {
+                        return  (32 === e.keyCode) ? NagaBonar.doStart($('.nb-start')) : false
+                    })
+                })
+            })
+        }
     </script>
 </body>
 

@@ -3,7 +3,7 @@
 /* Global Variable */
 body {
   color: #5B5B5B;
-  font-size: 16px;
+  font-size: 15px;
   background-color: #D8E3F4;
   padding: 75px 0;
 }
@@ -35,14 +35,19 @@ body {
 .container .preview .board img {
   width: 100%;
   height: auto;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+  border-radius: 30px;
 }
 .container .preview .character .grid {
   display: flex;
 }
 .container .preview .character .grid .item {
-  width: 24%;
+  width: 20%;
   display: block;
-  margin: 1%;
+  margin: 3%;
 }
 .container .preview .character .grid .item img {
   width: 100%;

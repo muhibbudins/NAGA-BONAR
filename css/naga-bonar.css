@@ -5,7 +5,6 @@ body {
   color: #5B5B5B;
   font-size: 14px;
   background-color: #789EDA;
-  overflow: hidden;
 }
 .animated.fast {
   -webkit-animation-duration: 0.3s;
